@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Acceuil</title>
+  <link rel="stylesheet" type="text/css" href="site.css"/>
+</head>
+<body>
+<header>
+  <div id="head_container">
+    <div id="logo">
+      <a href="acceuil.html">
+        <img src="logo.png" alt="le site" width="10%" length="10%"/>
+      </a>
+    </div>
+    <div id="connection">
+      <a href="connection.html">Connexion|s'inscrire</a>
+    </div>
+  </div>
+  <nav>
+    <a href="acceuil.html">
+      <div id="acceuil" title="Retour à la page d'acceuil">
+        <img src="Home.png" alt="Ajouter un film" width="11%" length="11%"/>
+      </div>
+    </a>
+    <a href="ajouter.html">
+      <div id="ajouter">
+        <img src="add.png" alt="Ajouter un film" width="12%" length="12%"/>
+      </div>
+    </a>
+    <a href="favs.html">
+      <div id="favs">
+        <img src="fav.png" alt="favories" width="10%" length="10%"/>
+      </div>
+    </a>
+    <a href="vus.html">
+      <div id="vues">
+        <img src="vus.png" alt="films vus" width="10%" length="10%"/>
+      </div>
+    </a>
+    <a href="#">
+      <div class="profil">
+        <img src="profil.png" alt="profil" width="17%" length="17%"/>
+      </div>
+    </a>
+    <div id="recherche">
+      <form method="post" action="traitement.php">
+        <input class="searchbar" type="text" name="recherche" placeholder="Rechercher un film, une série, un acteur..." title="Rechercher un film, une série, un acteur..."/>
+      </form>
+    </div>
+    </nav>
+</header>
+  <article>
+      <aside id="filter_bar">
+        <h2>Trier par</h2>
+        <form class="formulaire" method="post" action="traitement.php">
+          <div id="type">
+            <input type="checkbox" name="films" class="type">films</inupt>
+            <input type="checkbox" name="séries" class="type">séries</inupt>
+          </div>
+          <div class="menu">
+          <a href="#" id="genre">GENRE </a>
+            <ul class="genre">
+              <li><input type="checkbox" class="genre" name="action">Action</inupt></li>
+              <li><input type="checkbox" class="genre" name="animation">Animation</inupt></li>
+              <li><input type="checkbox" class="genre" name="...">...</input></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <a href="#" id="date">DATE </a>
+              <ul class="date">
+                <li><input type="number" class="date" name="date" min="1900" max="2018" placeholder="Ex : 1992"></a></li>
+              </ul>
+          </div>
+          <div class="menu">
+          <a href="#" id="pays">PAYS </a>
+            <ul class="pays">
+              <li><input type="checkbox" class="pays" name="japon">Japon</inupt></li>
+              <li><input type="checkbox" class="pays" name="amerique">Amerique</inupt></li>
+              <li><input type="checkb   ox" class="pays" name="...">...</input></li>
+            </ul>
+          </div>
+        </form>
+      </aside>
+      <div id="film_container">
+        <div class="profil_container">
+          <p>Pseudo: John Doe</p>
+          <p>Nombre de films vus: 42</p>
+          <p>Nombre de favories: 0</p>
+          <p>...</p>
+        </div>
+        <h1>Films</h1>
+        <div class="film">
+          <img src="http://fr.web.img6.acsta.net/c_215_290/pictures/18/02/23/10/50/3676882.jpg" alt="tomb raider" width="100%" height="100%"/>
+        </div>
+        <div class="film">
+          <img src="http://fr.web.img3.acsta.net/c_215_290/pictures/17/10/16/15/40/0883250.jpg" alt="black panthere" width="100%" height="100%"/>
+        </div>
+        <div class="film">
+          <img src="http://fr.web.img6.acsta.net/c_215_290/pictures/18/01/24/17/09/1857016.jpg" alt="pacifc rim" width="100%" height="100%"/>
+        </div>
+        <div class="film">
+          <img src="http://fr.web.img5.acsta.net/c_215_290/pictures/18/02/14/09/15/3437390.jpg" alt="ready player one" width="100%" height="100%"/>
+        </div>
+        <h1>Séries</h1>
+        <div class="serie">
+          <img src="http://fr.web.img6.acsta.net/r_1280_720/pictures/17/05/03/08/45/266320.jpg" alt="casa de papel" width="100%" height="100%"/>
+        </div>
+        <div class="serie">
+          <img src="http://fr.web.img3.acsta.net/c_150_200/medias/nmedia/18/94/33/06/20320273.jpg" alt="rick et morty" width="100%" height="100%"/>
+        </div>
+        <div class="serie">
+          <img src="http://fr.web.img5.acsta.net/c_150_200/medias/nmedia/18/74/23/35/19779968.jpg?coixp=49&amp;coiyp=45" alt="Breaking Bad" width="100%" height="100%"/>
+        </div>
+        <div class="serie">
+          <img src="http://fr.web.img6.acsta.net/c_150_200/pictures/17/05/23/22/36/599289.jpg" alt="Game of Thrones" width="100%" height="100%"/ >
+        </div>
+      </div>
+  </article>
+  <footer>
+    <div id="copyright">
+      <small>&copy;ZARKA Eric, MAZEAU Tara, SIVA Shannon, MILAD Nardine</small>
+    </div>
+  </footer>
+
+  <script src="jquery.js"></script>
+  <script type="text/javascript" src="site.js"></script>
+
+
+</body>
+
+
+</html>

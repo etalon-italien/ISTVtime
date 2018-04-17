@@ -1,0 +1,203 @@
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-left: 0vw;
+  font-size: 1vw;
+  color: #7ba0d4;
+  background-color: rgb(46, 41, 63);
+  overflow-x: hidden;
+  text-decoration: none;
+}
+header{
+  background-color: rgb(34, 41, 51);
+  display: flex;
+  flex-direction: column;
+}
+#head_container{
+  display: flex;
+  flex-direction: row;
+}
+#logo{
+  width: 90vw;
+}
+#connection{
+  margin-top: 0;
+  width: 10vw;
+  text-align: center;
+}
+#connection a{
+  color: rgb(11, 51, 200);
+}
+nav{
+  display: flex;
+  width: 100%;
+  background-color: #131a20;
+}
+
+#recherche form{
+  height: 2.99vw;
+  display: flex;
+  width: 16.67vw;
+}
+
+.searchbar{
+  width: 100%;
+  font-size: 0.75vw;
+}
+
+#acceuil, #ajouter, #favs, #vues, .profil{
+  border-left: 0.1vw solid black;
+  height: 2.5vw;
+  width: 16.67vw;
+}
+#acceuil{
+  border-bottom: 0.5vw solid rgb(80, 80, 88);
+}
+
+#ajouter{
+  border-bottom: 0.5vw solid rgb(218, 127, 5);
+
+}
+#favs{
+  border-bottom: 0.5vw solid rgb(13, 187, 75);
+
+}
+#vues{
+  border-bottom: 0.5vw solid rgb(231, 252, 62);
+
+}
+.profil{
+  border-bottom: 0.5vw solid rgb(10, 146, 176);
+
+}
+
+#acceuil:hover{
+  background-color: rgb(80, 80, 88);
+}
+
+#ajouter:hover{
+  background-color: rgb(218, 127, 5);
+}
+#favs:hover{
+  background-color: rgb(13, 187, 75);
+}
+#vues:hover{
+  background-color: rgb(231, 252, 62);
+}
+.profil:hover{
+  background-color: rgb(10, 146, 176);
+}
+
+aside a{
+  color: gray;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+aside a:hover{
+  display: block;
+  background-color: #9b59b688;
+}
+
+aside{
+  position: absolute;
+  width: 24%;
+  margin-left: 0.7vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu{
+  border-radius: 5px;
+  text-align: center;
+  width: 90%;
+  align-items: center;
+}
+.formulaire{
+  display: flex;
+  flex-direction: column;
+}
+.formulaire_addpage input, input.date{
+  width: 10vw;
+  font-size: 1vw;
+    padding: 0;
+}
+ul{
+  margin: 2vw 3vw;;
+  list-style: none;
+  padding: 0;
+}
+
+aside .type, aside.genre, aside.pays{
+  width: 1vw;
+  margin: 0;
+  padding: 0;
+}
+aside li {
+    padding: 0;
+  color: gray;
+  text-align: left;
+  border: hidden;
+}
+
+h2 {
+  text-align: center;
+  margin-right: 2vw;
+  border-left: 0.5vw solid #9b59b6;
+}
+
+#type{
+  text-align: center;
+}
+
+#film_container,.addpage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 23vw;
+}
+h1{
+  width: 90%;
+  font-size: 2vw;
+  border-bottom: 0.2vw solid black;
+}
+.film, .serie{
+  padding: 1vw;
+  width: 15.6vw;
+  height: 21.1vw;
+  border-right: 0.1vw solid black;
+}
+
+.profil_container{
+  position: absolute;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  margin-left:44vw;
+  background-color: #131a20;
+  width: 15.67vw;
+  border: 0.1vw solid white;
+  border-top: hidden;
+}
+
+footer{
+  position: sticky;
+  bottom: 0;
+  background-color: #131a20;
+}
+footer.addpage{
+  margin-left: 0;
+  margin-top: 90vh;
+  width: 100vw;
+  background-color: #131a20;
+}
+.addpage #copyright{
+  margin-left: 38.3vw;
+}
+#copyright{
+  text-align: center;
+}

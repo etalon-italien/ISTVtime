@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Favories</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="site.css"/>
+
+</head>
+<body>
+<header>
+  <div id="head_container">
+    <div id="logo">
+      <a href="acceuil.html">
+        <img src="logo.png" alt="le site" width="10%" length="10%"/>
+      </a>
+    </div>
+    <div id="connection">
+      <a href="connection.html">Connexion|s'inscrire</a>
+    </div>
+  </div>
+  <nav>
+    <a href="acceuil.html">
+      <div id="acceuil" title="Retour à la page d'acceuil">
+        <img src="Home.png" alt="Ajouter un film" width="11%" length="11%"/>
+      </div>
+    </a>
+    <a href="ajouter.html">
+      <div id="ajouter">
+        <img src="add.png" alt="Ajouter un film" width="12%" length="12%"/>
+      </div>
+    </a>
+    <a href="favs.html">
+      <div id="favs">
+        <img src="fav.png" alt="favories" width="10%" length="10%"/>
+      </div>
+    </a>
+    <a href="vus.html">
+      <div id="vues">
+        <img src="vus.png" alt="films vus" width="10%" length="10%"/>
+      </div>
+    </a>
+    <a href="#">
+      <div class="profil">
+        <img src="profil.png" alt="profil" width="17%" length="17%"/>
+      </div>
+    </a>
+    <div id="recherche">
+      <form method="post" action="traitement.php">
+        <input class="searchbar" type="search" name="recherche" placeholder="Rechercher un film, une série, un acteur..." title="Rechercher un film, une série, un acteur..."/>
+      </form>
+    </div>
+    </nav>
+</header>
+<article>
+  <aside>
+    <h2>Ajouter un film ou une série</h2>
+  <div class="formulaire_addpage">
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="addtitle">Titre: </label>
+        <input type="text" name="titre" id="addtitle" placeholder="Ex: wayne's world"/>
+      </p>
+      <p>
+        <label for="add_date">Date de sortie: </label>
+        <input type="number" min="1900" max="2018" name="date" id="add_date" placeholder="Ex: 1992"/>
+      </p>
+      <p>
+        ...
+      </p>
+    </form>
+  </div>
+</aside>
+  <div class="addpage">
+    <div class="profil_container">
+      <p>Pseudo: John Doe</p>
+      <p>Nombre de films vus: 42</p>
+      <p>Nombre de favories: 0</p>
+      <p>...</p>
+    </div>
+  </div>
+</article>
+<footer class="addpage">
+  <div id="copyright">
+    <small>&copy;ZARKA Eric, MAZEAU Tara, SIVA Shannon, MILAD Nardine</small>
+  </div>
+</footer>
+
+  <script src="jquery.js"></script>
+  <script type="text/javascript" src="site.js"></script>
+
+</body>
+</html>
