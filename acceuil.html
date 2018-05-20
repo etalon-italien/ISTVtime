@@ -9,14 +9,14 @@
 <body>
 <header>
   <div id="head_container">
-    <div id="logo">
-      <a href="acceuil.html">
-        <img src="logo.png" alt="le site" width="10%" length="10%"/>
+      <a id="txtlogo" href="acceuil.html">
+        <h1 >ISTVtime</h1>
       </a>
-    </div>
     <div id="connection">
-      <a href="connection.html">Connexion|s'inscrire</a>
+      <a href="connection.html">Connexion|</a>
+      <a href="inscription.html">s'inscrire</a>
     </div>
+  </div>
   </div>
   <nav>
     <a href="acceuil.html">
@@ -46,7 +46,7 @@
     </a>
     <div id="recherche">
       <form method="post" action="traitement.php">
-        <input class="searchbar" type="text" name="recherche" placeholder="Rechercher un film, une série, un acteur..." title="Rechercher un film, une série, un acteur..."/>
+        <input autocomplete="off" class="searchbar" type="text" name="recherche" placeholder="Rechercher un film, une série, un acteur..." value=""/>
       </form>
     </div>
     </nav>
@@ -56,15 +56,15 @@
         <h2>Trier par</h2>
         <form class="formulaire" method="post" action="traitement.php">
           <div id="type">
-            <input type="checkbox" name="films" class="type">films</inupt>
-            <input type="checkbox" name="séries" class="type">séries</inupt>
+            <input type="checkbox" name="type[]" value="film" class="type">films</inupt>
+            <input type="checkbox" name="type[]" value="serie" class="type">séries</inupt>
           </div>
           <div class="menu">
           <a href="#" id="genre">GENRE </a>
             <ul class="genre">
-              <li><input type="checkbox" class="genre" name="action">Action</inupt></li>
-              <li><input type="checkbox" class="genre" name="animation">Animation</inupt></li>
-              <li><input type="checkbox" class="genre" name="...">...</input></li>
+              <li><input type="checkbox" class="genre" value="Action" name="genre[]">Action</inupt></li>
+              <li><input type="checkbox" class="genre" value="Animation" name="genre[]">Animation</inupt></li>
+              <li><input type="checkbox" class="genre" value="..." name="genre[]">...</input></li>
             </ul>
           </div>
           <div class="menu">
@@ -76,11 +76,12 @@
           <div class="menu">
           <a href="#" id="pays">PAYS </a>
             <ul class="pays">
-              <li><input type="checkbox" class="pays" name="japon">Japon</inupt></li>
-              <li><input type="checkbox" class="pays" name="amerique">Amerique</inupt></li>
-              <li><input type="checkb   ox" class="pays" name="...">...</input></li>
+              <li><input type="checkbox" class="pays" value="Japon" name="pays[]">Japon</inupt></li>
+              <li><input type="checkbox" class="pays" value ="USA" name="pays[]">USA</inupt></li>
+              <li><input type="checkbox" class="pays" value="..."  name="pays[]">...</input></li>
             </ul>
           </div>
+          <input type="submit" value="VALIDER" id="valider"/>
         </form>
       </aside>
       <div id="film_container">
@@ -91,9 +92,11 @@
           <p>...</p>
         </div>
         <h1>Films</h1>
-        <div class="film">
-          <img src="http://fr.web.img6.acsta.net/c_215_290/pictures/18/02/23/10/50/3676882.jpg" alt="tomb raider" width="100%" height="100%"/>
-        </div>
+        <a href="film.html">
+          <div class="film">
+            <img src="http://fr.web.img6.acsta.net/c_215_290/pictures/18/02/23/10/50/3676882.jpg" alt="tomb raider" width="100%" height="100%"/>
+          </div>
+        </a>
         <div class="film">
           <img src="http://fr.web.img3.acsta.net/c_215_290/pictures/17/10/16/15/40/0883250.jpg" alt="black panthere" width="100%" height="100%"/>
         </div>
@@ -120,7 +123,7 @@
   </article>
   <footer>
     <div id="copyright">
-      <small>&copy;ZARKA Eric, MAZEAU Tara, SIVA Shannon, MILAD Nardine</small>
+      <small>&copy;ZARKA Eric, MILAD Nardine, SIVA Shanon, MAZEAU Tara</small>
     </div>
   </footer>
 
