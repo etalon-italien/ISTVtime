@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>film</title>
+  <link rel="stylesheet" type="text/css" href="site.css"/>
+</head>
+<body>
+  <header>
+    <div id="head_container">
+        <a id="txtlogo" href="acceuil.html">
+          <h1 >ISTVtime</h1>
+        </a>
+      <div id="connection">
+        <a href="connection.html">Connexion|</a>
+        <a href="inscription.html">s'inscrire</a>
+      </div>
+    </div>
+    </div>
+    <nav>
+      <a href="acceuil.html">
+        <div id="acceuil" title="Retour à la page d'acceuil">
+          <img src="Home.png" alt="Ajouter un film" width="11%" length="11%"/>
+        </div>
+      </a>
+      <a href="ajouter.html">
+        <div id="ajouter">
+          <img src="add.png" alt="Ajouter un film" width="12%" length="12%"/>
+        </div>
+      </a>
+      <a href="favs.html">
+        <div id="favs">
+          <img src="fav.png" alt="favories" width="10%" length="10%"/>
+        </div>
+      </a>
+      <a href="vus.html">
+        <div id="vues">
+          <img src="vus.png" alt="films vus" width="10%" length="10%"/>
+        </div>
+      </a>
+      <a href="#">
+        <div class="profil">
+          <img src="profil.png" alt="profil" width="17%" length="17%"/>
+        </div>
+      </a>
+      <div id="recherche">
+        <form method="post" action="traitement.php">
+          <input class="searchbar" type="text" name="recherche" placeholder="Rechercher un film, une série, un acteur..." title="Rechercher un film, une série, un acteur..."/>
+        </form>
+      </div>
+      </nav>
+  </header>
+  <div class="addpage">
+    <div class="profil_container">
+      <p>Pseudo: John Doe</p>
+      <p>Nombre de films vus: 42</p>
+      <p>Nombre de favories: 0</p>
+      <p>...</p>
+    </div>
+  </div>
+  <article>
+    <div class="films">
+      <div class="photo">
+        <img src="http://fr.web.img6.acsta.net/c_215_290/pictures/18/02/23/10/50/3676882.jpg" alt="tomb raider" width="100%" height="100%"/>
+      </div>
+      <div class="description">
+        <h2>
+          TITRE: Tomb Raider
+        </h2>
+        <p>
+          Synopsis: Mensarum enim voragines et varias voluptatum inlecebras, ne longius progrediar, praetermitto illuc transiturus quod quidam per ampla spatia urbis subversasque silices sine periculi metu properantes equos velut publicos signatis quod dicitur calceis agitant, familiarium agmina tamquam praedatorios globos post terga trahentes ne Sannione quidem, ut ait comicus, domi relicto. quos imitatae matronae complures opertis capitibus et basternis per latera civitatis cuncta discurrunt.
+        </p>
+        <h3>
+          Réalisateur:
+        </h3>
+        <div class="real">
+          <a href="http://external-images.premiere.fr/var/premiere/storage/images/racine/star/simon-west-100051/957921-116-fre-FR/Simon-West.jpg" target="_blank">
+            <img src="http://external-images.premiere.fr/var/premiere/storage/images/racine/star/simon-west-100051/957921-116-fre-FR/Simon-West.jpg" alt="réal tomb raider" width="100%" height="100%"/>
+          </a>
+          <p>Roar Uthaug</p>
+        </div>
+        <h3>
+          Distribution:
+        </h3>
+        <div class="distrib">
+          <div class="acteur">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Alicia_Vikander_2013-01-21_B.jpg/220px-Alicia_Vikander_2013-01-21_B.jpg" alt="acteur principal" width="100%" height="100%"/>
+            <p>Alicia Vikander</p>
+          </div>
+          <div class="acteur">
+            <img src="https://cdn1.i-scmp.com/sites/default/files/styles/landscape/public/images/methode/2017/11/07/28c9d670-af15-11e7-9cb1-5f6b75e2d8b2_1280x720_111644.jpg?itok=JwYIuCor" alt="acteur principal" width="100%" height="100%"/>
+            <p>Daniel Wu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer class="addpage">
+    <div id="copyright">
+      <small>&copy;ZARKA Eric, MILAD Nardine, SIVA Shanon, MAZEAU Tara</small>
+    </div>
+  </footer>
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="site.js"></script>
+
+</body>
+</html>
