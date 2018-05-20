@@ -1,9 +1,10 @@
-$(function() {
+//animation
 
-  $('.date').hide(0);
+  $('.date').hide(0); //intialization to Hidden
   $('.genre').hide(0);
   $('.pays').hide(0);
   $('.profil_container').hide(0);
+
   $('#genre').click(function() {
 
     $('.genre').slideToggle(600);
@@ -28,4 +29,3 @@ $(function() {
 
     $('.profil_container').slideUp(600);
   });
-});
