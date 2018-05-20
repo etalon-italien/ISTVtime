@@ -1,5 +1,5 @@
 <?php
-  if(empty($_POST['type'])){
+  if(empty($_POST['type'])){//
    echo "Aucun type n'a été cochée<br>";
   }
   else{
